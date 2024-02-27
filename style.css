@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: hsl(24, 5%, 18%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: hsl(30, 54%, 90%);
+    min-height: 100vh;
+    max-width: 70vw;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    max-width: 100%;
+}
+.hero{
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 40px;
+}
+ul{
+    line-height: 200%;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+ol{
+    line-height: 150%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li::marker{
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+.prep-box li::marker{
+    color: hsl(332, 51%, 32%);
+}
+li{
+    padding-left: 15px;
+}
+.heading{
+    margin: 0px 30px 20px 30px;
+    color: hsl(24, 5%, 18%);
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+}
+.sub-heading{
+    margin: 20px 30px;
+    color: hsl(24, 5%, 18%);
+}
+.prep-box{
+    background-color: hsla(332, 51%, 32%, 5%);
+    margin: 20px 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+h3{
+    color: hsl(332, 51%, 32%);
+}
+.ingredients,.instructions,.nutrition{
+    margin: 20px 30px;
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+}
+h2{
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    margin: 20px 0px;
+}
+.sub-text{
+    margin: 20px 0px;
+}
+table{
+    padding: 0px 30px 30px 30px;
+    width: 100%;
+}
+td{
+    padding: 10px 20px;
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+}
+tr:last-child td{
+    border-bottom: none;
+}
+hr{
+    margin: 0px 30px;
+    border: 1px solid hsl(30, 18%, 87%);
+}
+.table b{
+    color: hsl(14, 45%, 36%);;
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        margin: 0px;
+    }
+    .card{
+        min-width: 375px;
+        border-radius: 0px;
+    }
+    .hero{
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .heading{
+        margin: 20px 30px;
+    }
+}
